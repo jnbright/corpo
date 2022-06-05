@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
 
-
-
-
 $light:      #cce7f5;
 $dark:       #130c19;
 $primary:    #0d4368;
@@ -201,5 +198,25 @@ li {
 @include media-breakpoint-down(sm) { 
   .main-logo {
     display: none;
+  }
+  .first, .second, .third {
+    height: 100%;
+    padding: 1rem 0;
+  }
+  .blank {
+    min-height: 10vh;
+    background-color: rgba($primary, 0.7);
+  }
+  ul {
+    padding: 0;
+  }
+  .item-body {
+    padding: 0.5rem;
+  }
+  .mobile-spacing {
+    margin: 0 1rem;
+  }
+  .mobile-spacing-vertical {
+    margin: 1rem 0;
   }
 }

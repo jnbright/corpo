@@ -11063,4 +11063,30 @@ li {
   .main-logo {
     display: none;
   }
+
+  .first, .second, .third {
+    height: 100%;
+    padding: 1rem 0;
+  }
+
+  .blank {
+    min-height: 10vh;
+    background-color: rgba(13, 67, 104, 0.7);
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .item-body {
+    padding: 0.5rem;
+  }
+
+  .mobile-spacing {
+    margin: 0 1rem;
+  }
+
+  .mobile-spacing-vertical {
+    margin: 1rem 0;
+  }
 }/*# sourceMappingURL=main.css.map */
