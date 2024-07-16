@@ -27,7 +27,9 @@ $theme-colors: (
 @import "../style/bootstrap/scss/bootstrap";
 
 :root{
---color: #333; 
+  --color: #333; 
+  --bs-badge-color: 237, 233, 226;
+  --bs-primary-rgb: 96, 135, 161;
 }
 
 body {
@@ -158,6 +160,10 @@ li {
 .intro {
   font-size: 1.4rem;
   font-style: italic;
+}
+
+.navigation-slot {
+  display: none;
 }
 
 .whatsapp_wrap{
