@@ -27,138 +27,37 @@ $theme-colors: (
 @import "../style/bootstrap/scss/bootstrap";
 
 :root{
---color: #333; 
+  --color: #333; 
+  --bs-badge-color: 237, 233, 226;
+  --bs-primary-rgb: 96, 135, 161;
 }
 
-body {
-  font-family: 'Red Hat Text', sans-serif;
-}
-
-.bg-container {
-  text-align: center;
-  color: var(--color);
-  width: 100%;
-  min-height: 100vh;
+.content-section {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: url('../images/bg_1.jpeg');
+  p {
+    margin: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.bg-custom {
+  background-blend-mode: screen;
   background-size: cover;
-  background-position: center;   
-  
-/*  this is where the magic happens:  */
-  background-attachment: fixed;
-  img{
-    width: 100%;
-  }
-  .main-logo {
-    background-color: rgba($light,0.9);
-  }
-  .text-shadow {
-    text-shadow: 2px 2px 2px $dark;
-  }
-  .text-shadow-reverse {
-    text-shadow: 2px 2px 2px $light;
-  }
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 3rem;
-}
-
-.navbar {
-  opacity: 0.8;
-  position: sticky;
-  top:0;
-  .navbar-logo{
-    width: 60%;
-  }
-}
-
-.blank,
-.other {
-  width: 100%;
-  min-height: 20vh;
-  background-color: var(--color);
-}
-
-.second {
-  background-image:url("../images/bg_2.jpeg");
-  background-attachment: fixed;
-  height: 1200px;
-}
-
-.third {
-  background-image:url("../images/bg_3.jpeg");
-  background-attachment: fixed;
-  height: 1200px;
-}
-
-h3 {
-  font-weight: 700;
-  font-size: 1.6rem;
-  margin-top: 1em;
-}
-
-.card > a {
-  margin-bottom: 2em;
-}
-
-.list {
-  font-size: 1.1rem;
-}
-
-.item {
+  background-position: center center;
   display: flex;
-  background-color: white;;
   flex-direction: column;
-  align-items: center;
-  border-radius: .5em;
-  -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
-  -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
-  box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
 }
 
-.item-body {
-  padding: 1.5rem 2.5rem;
-}
-
-.img {
+.navigation-slot {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
-  height: 25vh;
-  background-color: lightgrey;
-  background-size: cover;
-  background-position: center;
-  border-radius: .5em .5em 0 0;
 }
 
-.img-first {
-  background-image: url("../images/bg_toilet.jpeg");
-}
-
-.img-second {
-  background-image: url("../images/bg_moving.jpeg");
-}
-
-.img-third {
-  background-image: url("../images/bg_spring.jpeg");
-}
-
-.second {
-  flex-direction: row;
-  gap: 1.6em;
-}
-
-li {
-  list-style: none;
-}
-
-.intro {
-  font-size: 1.4rem;
-  font-style: italic;
-}
 
 .whatsapp_wrap{
   bottom: 65%;
@@ -195,28 +94,8 @@ li {
       }
   }
 }
-@include media-breakpoint-down(sm) { 
-  .main-logo {
-    display: none;
-  }
-  .first, .second, .third {
-    height: 100%;
-    padding: 1rem 0;
-  }
-  .blank {
-    min-height: 10vh;
-    background-color: rgba($primary, 0.7);
-  }
-  ul {
-    padding: 0;
-  }
-  .item-body {
-    padding: 0.5rem;
-  }
-  .mobile-spacing {
-    margin: 0 1rem;
-  }
-  .mobile-spacing-vertical {
-    margin: 1rem 0;
+@include media-breakpoint-up(sm) { 
+  .content-section {
+    flex-direction: row;
   }
 }
