@@ -119,9 +119,9 @@ body {
   }
 }
 @include media-breakpoint-up(sm) { 
-  .content-section {
-    flex-direction: row;
-  }
+  // .content-section {
+  //   flex-direction: row;
+  // }
   .logo-wrapper {
     display: none;
   }
@@ -129,5 +129,14 @@ body {
     .logo-wrapper {
       display: unset;
     }
+  }
+  .tiles{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .extra-image {
+    display: none;
   }
 }

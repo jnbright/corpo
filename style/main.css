@@ -9871,13 +9871,19 @@ body {
 }
 
 @media (min-width: 576px) {
-  .content-section {
-    flex-direction: row;
-  }
   .logo-wrapper {
     display: none;
   }
   .image-container .logo-wrapper {
     display: unset;
+  }
+  .tiles {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .extra-image {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
