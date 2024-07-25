@@ -1,129 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <!-- Custom CSS for Bootstrap Colors -->
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/main.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-J3JWVEPYQC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-J3JWVEPYQC");
+    </script>
     <style>
-        :root{
-            --bs-badge-color-rgb: 237, 233, 226;
-            --bs-primary-rgb: 96, 135, 161;
-        }
-        .image-container img {
-            width: 100%;
-            height: auto;
-        }
+      :root {
+        --bs-badge-color-rgb: 237, 233, 226;
+        --bs-primary-rgb: 96, 135, 161;
+      }
+      .image-container img {
+        width: 100%;
+        height: auto;
+      }
     </style>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container-fluid p-0">
-        <a name="top"></a>
-        <div class="logo-wrapper">
-            <img src="/images/logo.svg" class="img-fluid p-3" alt="">
-        </div>
+      <a name="top"></a>
+      <div class="logo-wrapper">
+        <img src="/images/logo.svg" class="img-fluid p-3" alt="" />
+      </div>
 
-        <div class="image-container d-flex justify-content-center position-relative">
-            <div class="logo-wrapper position-absolute w-25 p-2 rounded" style="left:3%; top:5%; background-color: rgba(255, 255, 255, 0.65);">
-                <img src="/images/logo.svg" class="img-fluid" alt="">
-            </div>
-            <a class="badge position-absolute text-uppercase text-decoration-none bg-primary" style="left: 66%; top: 20%;" href="#house">clean house</a>
-            <a class="badge position-absolute text-uppercase text-decoration-none bg-primary" style="left: 26%; top: 46%;" href="#windows">clean windows</a>
-            <a class="badge position-absolute text-uppercase text-decoration-none bg-primary" style="left: 32%; top: 62%;" href="#sofa">clean sofa</a>
-            <a class="badge position-absolute text-uppercase text-decoration-none bg-primary" style="left: 47%; top: 68%;" href="#dust">clean dust</a>
-            <a class="badge position-absolute text-uppercase text-decoration-none bg-primary" style="left: 46%; top: 92%;" href="#floor">clean floor and carpets</a>
-            <a class="badge position-absolute text-uppercase text-decoration-none bg-primary" style="left: 30%; top: 80%;" href="#kitchens">Kitchens and bathrooms</a>
-            <img src="/images/jazzy-n-bright.jpg" class="img-fluid" alt="">
+      <div
+        class="image-container d-flex justify-content-center position-relative"
+      >
+        <div
+          class="logo-wrapper position-absolute w-25 p-2 rounded"
+          style="left: 3%; top: 5%; background-color: rgba(255, 255, 255, 0.65)"
+        >
+          <img src="/images/logo.svg" class="img-fluid" alt="" />
         </div>
+        <a
+          class="badge position-absolute text-uppercase text-decoration-none bg-primary"
+          style="left: 66%; top: 20%"
+          href="#house"
+          >clean house</a
+        >
+        <a
+          class="badge position-absolute text-uppercase text-decoration-none bg-primary"
+          style="left: 26%; top: 46%"
+          href="#windows"
+          >clean windows</a
+        >
+        <a
+          class="badge position-absolute text-uppercase text-decoration-none bg-primary"
+          style="left: 32%; top: 62%"
+          href="#sofa"
+          >clean sofa</a
+        >
+        <a
+          class="badge position-absolute text-uppercase text-decoration-none bg-primary"
+          style="left: 47%; top: 68%"
+          href="#dust"
+          >clean dust</a
+        >
+        <a
+          class="badge position-absolute text-uppercase text-decoration-none bg-primary"
+          style="left: 46%; top: 92%"
+          href="#floor"
+          >clean floor and carpets</a
+        >
+        <a
+          class="badge position-absolute text-uppercase text-decoration-none bg-primary"
+          style="left: 30%; top: 80%"
+          href="#kitchens"
+          >Kitchens and bathrooms</a
+        >
+        <img src="/images/jazzy-n-bright.jpg" class="img-fluid" alt="" />
+      </div>
 
-        <div class="d-flex bg-custom" style="background-image: linear-gradient(white, rgb(190, 190, 190)), url(/images/house2.jpg);">
-            <div class="navigation-slot">
-                <a name="house">Clean House</a>
-                <a href="#top">Back to top</a>
-            </div>
-            <div class="content-section">
-                <div class="col-12 col-md-3">
-                    <img class="img-fluid" src="/images/house1.jpg" alt="House" >
-                </div>
-                <div class=" mt-3">A clean house is a sanctuary of comfort and well-being. At Jazzy & Bright, we offer personalized, cleaning services using top quality products and the latest techniques. Our dedicated team ensures every corner of your home sparkles, creating a welcoming atmosphere for family and guests.</div>
-            </div>
+      <div
+        class="d-flex bg-custom"
+        style="
+          background-image: linear-gradient(white, rgb(190, 190, 190)),
+            url(/images/house2.jpg);
+        "
+      >
+        <div class="navigation-slot">
+          <a name="house">Clean House</a>
+          <a href="#top">Back to top</a>
         </div>
-        <div class="d-flex bg-custom" style="background-image: linear-gradient(white, rgb(190, 190, 190)), url(/images/window.jpg);">
-            <div class="navigation-slot">
-                <a name="windows">Shiny Windows</a>
-                <a href="#top">Back to top</a>
-            </div>
-            <div class="content-section">
-                <div class="col-12 col-md-3">
-                    <img class="img-fluid" src="/images/window.jpg" alt="Windows">
-                </div>
-                <div class=" mt-3">Cleaning windows is essential for a bright, inviting home. Enjoy natural light and unobstructed views with our team window cleaning services, where clarity and cleanliness meet.</div>
-            </div>
+        <div class="content-section">
+          <div class="col-12 col-md-3">
+            <img class="img-fluid" src="/images/house1.jpg" alt="House" />
+          </div>
+          <div class="mt-3">
+            A clean house is a sanctuary of comfort and well-being. At Jazzy &
+            Bright, we offer personalized, cleaning services using top quality
+            products and the latest techniques. Our dedicated team ensures every
+            corner of your home sparkles, creating a welcoming atmosphere for
+            family and guests.
+          </div>
         </div>
-        <div class="d-flex bg-custom" style="background-image: linear-gradient(white, rgb(190, 190, 190)), url(/images/sofa1.jpg);">
-            <div class="navigation-slot">
-                <a name="sofa">Deep Clean Sofa</a>
-                <a href="#top">Back to top</a>
-            </div>
-            <div class="content-section">
-
-                <div class="col-12 col-md-3">
-                    <img class="img-fluid" src="/images/sofa2.jpg" alt="Sofa" >
-                    <img class="img-fluid mt-3" src="/images/dining.jpg" alt="Dining Room" >
-                </div>
-                <div class=" mt-3">A clean sofa and dining table are the heart of a welcoming home. At Jazzy & Bright, we meticulously clean and sanitize your furniture, removing dirt, stains, and allergens. Trust us to keep your living and dining spaces immaculate and inviting.</div>
-            </div>
+      </div>
+      <div
+        class="d-flex bg-custom"
+        style="
+          background-image: linear-gradient(white, rgb(190, 190, 190)),
+            url(/images/window.jpg);
+        "
+      >
+        <div class="navigation-slot">
+          <a name="windows">Shiny Windows</a>
+          <a href="#top">Back to top</a>
         </div>
-        <div class="d-flex bg-custom" style="background-image: linear-gradient(white, rgb(190, 190, 190)), url(/images/dusting2.jpg);">
-            <div class="navigation-slot">
-                <a name="dust">Full Dusting</a>
-                <a href="#top">Back to top</a>
-            </div>
-            <div class="content-section">
-                <div class="col-12 col-md-3">
-                    <img class="img-fluid" src="/images/dusting1.jpg" alt="Dusting" >
-                </div>
-                <div class=" mt-3">Dusting is essential for a clean and healthy home. We provide thorough dusting services to eliminate dust, allergens, and debris from every surface. Our skilled team uses top-quality tools and techniques to reach even the toughest spots, ensuring your furniture, shelves, and decorative items are pristine. Enjoy a fresh and clean home.</div>
-            </div>
+        <div class="content-section">
+          <div class="col-12 col-md-3">
+            <img class="img-fluid" src="/images/window.jpg" alt="Windows" />
+          </div>
+          <div class="mt-3">
+            Cleaning windows is essential for a bright, inviting home. Enjoy
+            natural light and unobstructed views with our team window cleaning
+            services, where clarity and cleanliness meet.
+          </div>
         </div>
-        <div class="d-flex bg-custom" style="background-image: linear-gradient(white, rgb(190, 190, 190)), url(/images/carpets1.jpg);">
-            <div class="navigation-slot">
-                <a name="floor">Floor and Carpets</a>
-                <a href="#top">Back to top</a>
-            </div>
-            <div class="content-section">
-                <div class="col-12 col-md-3">
-                    <img class="img-fluid" src="/images/carpets2.jpg" alt="Carpets" >
-                    <img class="img-fluid mt-3" src="/images/floor.jpg" alt="Floor" >
-                </div>
-                <div class=" mt-3">Clean floors and carpets are the foundation of a beautiful home. We offer cleaning services to remove dirt, stains, and allergens, restoring the original luster and freshness of your surfaces.</div>
-            </div>
+      </div>
+      <div
+        class="d-flex bg-custom"
+        style="
+          background-image: linear-gradient(white, rgb(190, 190, 190)),
+            url(/images/sofa1.jpg);
+        "
+      >
+        <div class="navigation-slot">
+          <a name="sofa">Deep Clean Sofa</a>
+          <a href="#top">Back to top</a>
         </div>
-        <div class="d-flex bg-custom" style="background-image: linear-gradient(white, rgb(190, 190, 190)), url(/images/bathroom1.jpg);">
-            <div class="navigation-slot">
-                <a name="kitchens">Kitchens and Bathrooms</a>
-                <a href="#top">Back to top</a>
-            </div>
-            <div class="content-section">
-                <div class="col-12 col-md-3">
-                    <img class="img-fluid" src="/images/kitchen1.jpg" alt="Kitchen">
-                    <img class="img-fluid mt-3" src="/images/bathroom2.jpg" alt="Bathroom">
-                </div>
-                <div class=" mt-3">Kitchens and bathrooms require meticulous cleaning services for these crucial areas. Our team uses products to sanitize countertops, appliances, sinks, showers, and toilets, ensuring every surface is spotless and germ-free. From scrubbing tiles and grout to polishing fixtures, we leave your kitchens and bathrooms sparkling clean.</div>
-            </div>
+        <div class="content-section">
+          <div class="col-12 col-md-3">
+            <img class="img-fluid" src="/images/sofa2.jpg" alt="Sofa" />
+            <img
+              class="img-fluid mt-3"
+              src="/images/dining.jpg"
+              alt="Dining Room"
+            />
+          </div>
+          <div class="mt-3">
+            A clean sofa and dining table are the heart of a welcoming home. At
+            Jazzy & Bright, we meticulously clean and sanitize your furniture,
+            removing dirt, stains, and allergens. Trust us to keep your living
+            and dining spaces immaculate and inviting.
+          </div>
         </div>
-
- 
-
-
+      </div>
+      <div
+        class="d-flex bg-custom"
+        style="
+          background-image: linear-gradient(white, rgb(190, 190, 190)),
+            url(/images/dusting2.jpg);
+        "
+      >
+        <div class="navigation-slot">
+          <a name="dust">Full Dusting</a>
+          <a href="#top">Back to top</a>
+        </div>
+        <div class="content-section">
+          <div class="col-12 col-md-3">
+            <img class="img-fluid" src="/images/dusting1.jpg" alt="Dusting" />
+          </div>
+          <div class="mt-3">
+            Dusting is essential for a clean and healthy home. We provide
+            thorough dusting services to eliminate dust, allergens, and debris
+            from every surface. Our skilled team uses top-quality tools and
+            techniques to reach even the toughest spots, ensuring your
+            furniture, shelves, and decorative items are pristine. Enjoy a fresh
+            and clean home.
+          </div>
+        </div>
+      </div>
+      <div
+        class="d-flex bg-custom"
+        style="
+          background-image: linear-gradient(white, rgb(190, 190, 190)),
+            url(/images/carpets1.jpg);
+        "
+      >
+        <div class="navigation-slot">
+          <a name="floor">Floor and Carpets</a>
+          <a href="#top">Back to top</a>
+        </div>
+        <div class="content-section">
+          <div class="col-12 col-md-3">
+            <img class="img-fluid" src="/images/carpets2.jpg" alt="Carpets" />
+            <img class="img-fluid mt-3" src="/images/floor.jpg" alt="Floor" />
+          </div>
+          <div class="mt-3">
+            Clean floors and carpets are the foundation of a beautiful home. We
+            offer cleaning services to remove dirt, stains, and allergens,
+            restoring the original luster and freshness of your surfaces.
+          </div>
+        </div>
+      </div>
+      <div
+        class="d-flex bg-custom"
+        style="
+          background-image: linear-gradient(white, rgb(190, 190, 190)),
+            url(/images/bathroom1.jpg);
+        "
+      >
+        <div class="navigation-slot">
+          <a name="kitchens">Kitchens and Bathrooms</a>
+          <a href="#top">Back to top</a>
+        </div>
+        <div class="content-section">
+          <div class="col-12 col-md-3">
+            <img class="img-fluid" src="/images/kitchen1.jpg" alt="Kitchen" />
+            <img
+              class="img-fluid mt-3"
+              src="/images/bathroom2.jpg"
+              alt="Bathroom"
+            />
+          </div>
+          <div class="mt-3">
+            Kitchens and bathrooms require meticulous cleaning services for
+            these crucial areas. Our team uses products to sanitize countertops,
+            appliances, sinks, showers, and toilets, ensuring every surface is
+            spotless and germ-free. From scrubbing tiles and grout to polishing
+            fixtures, we leave your kitchens and bathrooms sparkling clean.
+          </div>
+        </div>
+      </div>
     </div>
 
-
-
     <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
