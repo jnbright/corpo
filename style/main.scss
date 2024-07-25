@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 $light:      #cce7f5;
 $dark:       #130c19;
@@ -32,6 +33,12 @@ $theme-colors: (
   --bs-primary-rgb: 96, 135, 161;
 }
 
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 .content-section {
   padding: 1rem;
   display: flex;
@@ -54,8 +61,15 @@ $theme-colors: (
 
 .navigation-slot {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
   width: 100%;
+  font-style: italic;
+  font-size: x-large;
+  padding: 1rem 0 0;
+  a[href] {
+    font-size: medium;
+  }
 }
 
 
@@ -94,8 +108,26 @@ $theme-colors: (
       }
   }
 }
+
+.logo-wrapper {
+  display: unset;
+}
+  
+.image-container {
+  .logo-wrapper {
+    display: none;
+  }
+}
 @include media-breakpoint-up(sm) { 
   .content-section {
     flex-direction: row;
+  }
+  .logo-wrapper {
+    display: none;
+  }
+  .image-container {
+    .logo-wrapper {
+      display: unset;
+    }
   }
 }

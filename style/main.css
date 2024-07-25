@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -9788,6 +9788,12 @@ textarea.form-control-lg {
   --bs-primary-rgb: 96, 135, 161;
 }
 
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 .content-section {
   padding: 1rem;
   display: flex;
@@ -9810,8 +9816,15 @@ textarea.form-control-lg {
 
 .navigation-slot {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
   width: 100%;
+  font-style: italic;
+  font-size: x-large;
+  padding: 1rem 0 0;
+}
+.navigation-slot a[href] {
+  font-size: medium;
 }
 
 .whatsapp_wrap {
@@ -9849,8 +9862,22 @@ textarea.form-control-lg {
   color: #4dc247;
 }
 
+.logo-wrapper {
+  display: unset;
+}
+
+.image-container .logo-wrapper {
+  display: none;
+}
+
 @media (min-width: 576px) {
   .content-section {
     flex-direction: row;
+  }
+  .logo-wrapper {
+    display: none;
+  }
+  .image-container .logo-wrapper {
+    display: unset;
   }
 }/*# sourceMappingURL=main.css.map */
