@@ -9870,7 +9870,20 @@ body {
   display: none;
 }
 
+.packages {
+  padding: 1rem;
+}
+.packages .package {
+  padding: 1rem 0;
+}
+
 @media (min-width: 576px) {
+  .packages {
+    padding: 2rem;
+  }
+  .packages .package {
+    padding: 2rem;
+  }
   .logo-wrapper {
     display: none;
   }
@@ -9886,4 +9899,69 @@ body {
   .extra-image {
     display: none;
   }
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+.sidenav a {
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  font-size: 1rem;
+  right: 0.5rem;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+.contact-button {
+  padding: 0.5rem 1.5rem;
+  background: #55bff1;
+  color: white;
+  font-weight: 600;
+  position: fixed;
+  transform: rotate(-90deg);
+  z-index: 100;
+  left: -2.8rem;
+  top: 40%;
+  border-radius: 0 0 0.5rem 0.5rem;
+  -webkit-border-radius: 0 0 0.5rem 0.5rem;
+  -moz-border-radius: 0 0 0.5rem 0.5rem;
+  -ms-border-radius: 0 0 0.5rem 0.5rem;
+  -o-border-radius: 0 0 0.5rem 0.5rem;
+  box-shadow: 1px 1px 4px 3px #236C96;
+}
+
+footer img {
+  max-width: 300px !important;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

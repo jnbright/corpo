@@ -40,7 +40,26 @@
     <title>Jazzy & Bright</title>
   </head>
   <body>
-    <div class="container-fluid p-0">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >Close</a
+      >
+
+      <a href="https://www.instagram.com/jazzyandbright/" target="_blank">
+        <img src="/images/instagram-icon.svg" alt="Instagram" />
+      </a>
+      <a href="https://wa.me/+15146495385" target="_blank">
+        <img src="/images/whatsapp-icon.svg" alt="Whatsapp" />
+      </a>
+      <a href="tel:+15146495385" target="_blank">
+        <img src="/images/call-icon.svg" alt="Whatsapp" />
+      </a>
+    </div>
+
+    <div class="container-fluid p-0" id="main">
+      <!-- Use any element to open the sidenav -->
+      <span class="contact-button" onclick="openNav()">Contact us</span>
+
       <a name="top"></a>
       <div class="logo-wrapper">
         <img src="/images/logo.svg" class="img-fluid p-3" alt="" />
@@ -95,162 +114,699 @@
       </div>
 
       <div class="tiles">
+        <div
+          class="bg-custom col-md-4"
+          style="
+            background-image: linear-gradient(white, rgb(190, 190, 190)),
+              url(/images/house2.jpg);
+          "
+        >
+          <div class="navigation-slot">
+            <a name="house">Clean House</a>
+            <a href="#top">Back to top</a>
+          </div>
+          <div class="content-section">
+            <div class="xxxxxx">
+              <img class="img-fluid" src="/images/house1.jpg" alt="House" />
+            </div>
+            <div class="mt-3">
+              A clean house is a sanctuary of comfort and well-being. At Jazzy &
+              Bright, we offer personalized, cleaning services using top quality
+              products and the latest techniques. Our dedicated team ensures
+              every corner of your home sparkles, creating a welcoming
+              atmosphere for family and guests.
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex bg-custom col-md-4"
+          style="
+            background-image: linear-gradient(white, rgb(190, 190, 190)),
+              url(/images/window.jpg);
+          "
+        >
+          <div class="navigation-slot">
+            <a name="windows">Shiny Windows</a>
+            <a href="#top">Back to top</a>
+          </div>
+          <div class="content-section">
+            <div class="xxxxxx">
+              <img class="img-fluid" src="/images/window.jpg" alt="Windows" />
+            </div>
+            <div class="mt-3">
+              Cleaning windows is essential for a bright, inviting home. Enjoy
+              natural light and unobstructed views with our team window cleaning
+              services, where clarity and cleanliness meet.
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex bg-custom col-md-4"
+          style="
+            background-image: linear-gradient(white, rgb(190, 190, 190)),
+              url(/images/sofa1.jpg);
+          "
+        >
+          <div class="navigation-slot">
+            <a name="sofa">Deep Clean Sofa</a>
+            <a href="#top">Back to top</a>
+          </div>
+          <div class="content-section">
+            <div class="xxxxxx">
+              <img class="img-fluid" src="/images/sofa2.jpg" alt="Sofa" />
+              <img
+                class="img-fluid mt-3 extra-image"
+                src="/images/dining.jpg"
+                alt="Dining Room"
+              />
+            </div>
+            <div class="mt-3">
+              A clean sofa and dining table are the heart of a welcoming home.
+              At Jazzy & Bright, we meticulously clean and sanitize your
+              furniture, removing dirt, stains, and allergens. Trust us to keep
+              your living and dining spaces immaculate and inviting.
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex bg-custom col-md-4"
+          style="
+            background-image: linear-gradient(white, rgb(190, 190, 190)),
+              url(/images/dusting2.jpg);
+          "
+        >
+          <div class="navigation-slot">
+            <a name="dust">Full Dusting</a>
+            <a href="#top">Back to top</a>
+          </div>
+          <div class="content-section">
+            <div class="xxxxxx">
+              <img class="img-fluid" src="/images/dusting1.jpg" alt="Dusting" />
+            </div>
+            <div class="mt-3">
+              Dusting is essential for a clean and healthy home. We provide
+              thorough dusting services to eliminate dust, allergens, and debris
+              from every surface. Our skilled team uses top-quality tools and
+              techniques to reach even the toughest spots, ensuring your
+              furniture, shelves, and decorative items are pristine. Enjoy a
+              fresh and clean home.
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex bg-custom col-md-4"
+          style="
+            background-image: linear-gradient(white, rgb(190, 190, 190)),
+              url(/images/carpets1.jpg);
+          "
+        >
+          <div class="navigation-slot">
+            <a name="floor">Floor and Carpets</a>
+            <a href="#top">Back to top</a>
+          </div>
+          <div class="content-section">
+            <div class="xxxxxx">
+              <img class="img-fluid" src="/images/carpets2.jpg" alt="Carpets" />
+              <img
+                class="img-fluid mt-3 extra-image"
+                src="/images/floor.jpg"
+                alt="Floor"
+              />
+            </div>
+            <div class="mt-3">
+              Clean floors and carpets are the foundation of a beautiful home.
+              We offer cleaning services to remove dirt, stains, and allergens,
+              restoring the original luster and freshness of your surfaces.
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex bg-custom col-md-4"
+          style="
+            background-image: linear-gradient(white, rgb(190, 190, 190)),
+              url(/images/bathroom1.jpg);
+          "
+        >
+          <div class="navigation-slot">
+            <a name="kitchens">Kitchens and Bathrooms</a>
+            <a href="#top">Back to top</a>
+          </div>
+          <div class="content-section">
+            <div class="xxxxxx">
+              <img class="img-fluid" src="/images/kitchen1.jpg" alt="Kitchen" />
+              <img
+                class="img-fluid mt-3 extra-image"
+                src="/images/bathroom2.jpg"
+                alt="Bathroom"
+              />
+            </div>
+            <div class="mt-3">
+              Kitchens and bathrooms require meticulous cleaning services for
+              these crucial areas. Our team uses products to sanitize
+              countertops, appliances, sinks, showers, and toilets, ensuring
+              every surface is spotless and germ-free. From scrubbing tiles and
+              grout to polishing fixtures, we leave your kitchens and bathrooms
+              sparkling clean.
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="d-flex flex-wrap justify-content-evenly packages flex-grow-1">
+        <div class="package col-md-4 flex-grow-1">
+          <h3 class="text-center">Basic Cleaning Package</h3>
+          <div class="accordion" id="accordionBasicCleaningPackage">
+            <div class="accordion-item">
+              <h2
+                class="accordion-header"
+                id="panelsStayOpen-basic-living-room"
+              >
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-basic-living-room"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse-basic-living-room"
+                >
+                  Living Room and Bedrooms
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse-basic-living-room"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-basic-living-room"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>Sweep and mop floors.</li>
+                    <li>Vacuum carpets and rugs.</li>
+                    <li>Dust furniture, shelves, and surfaces.</li>
+                    <li>Tidy and organize common areas.</li>
+                    <li>Clean mirrors.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-basic-kitchen">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-basic-kitchen"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse-basic-kitchen"
+                >
+                  Kitchen
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse-basic-kitchen"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-basic-kitchen"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>Clean and disinfect countertops.</li>
+                    <li>Sweep and mop the floor.</li>
+                    <li>
+                      Clean exterior surfaces of appliances (fridge, microwave,
+                      oven, etc.).
+                    </li>
+                    <li>Wash dishes and utensils (if necessary).</li>
+                    <li>Empty and clean the sink.</li>
+                    <li>Take out the trash and replace bags.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-basic-bathrooms">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-basic-bathrooms"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse-basic-bathrooms"
+                >
+                  Bathrooms
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse-basic-bathrooms"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-basic-bathrooms"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>Clean and disinfect sinks and countertops.</li>
+                    <li>Clean mirrors.</li>
+                    <li>Clean showers and bathtubs.</li>
+                    <li>Sweep and mop the floor.</li>
+                    <li>Replace towels and toilet paper (if necessary).</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2
+                class="accordion-header"
+                id="panelsStayOpen-basic-common-areas"
+              >
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-basic-common-areas"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse-basic-common-areas"
+                >
+                  Common Areas
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse-basic-common-areas"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-basic-common-areas"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>Clean and organize common areas.</li>
+                    <li>Vacuum or sweep floors.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-basic-extras">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-basic-extras"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse-basic-extras"
+                >
+                  Customization and Extras
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse-basic-extras"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-basic-extras"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      Additional services (window cleaning, interior appliance
+                      cleaning, etc.) available at an extra cost.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="package col-md-4 flex-grow-1">
+          <h3 class="text-center">Deep Cleaning Package</h3>
+          <div class="accordion" id="accordionDeepCleaningPackage">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-deep-living-room">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-deep-living-room"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse-deep-living-room"
+                >
+                  Living Room and Bedrooms
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse-deep-living-room"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-deep-living-room"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>Sweep, mop, and vacuum all floors and carpets.</li>
+                    <li>
+                      Dust all surfaces, including hard-to-reach areas like
+                      ceiling fans, light fixtures, and baseboards.
+                    </li>
+                    <li>Clean and polish furniture.</li>
+                    <li>
+                      Clean windows (interior and exterior, where accessible).
+                    </li>
+                    <li>Wash curtains and dust blinds.</li>
+                    <li>Clean mirrors and glass surfaces.</li>
+                    <li>Vacuum and clean under furniture.</li>
+                    <li>Organize and tidy up spaces.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-deep-kitchen">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-deep-kitchen"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse-deep-kitchen"
+                >
+                  Kitchen
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse-deep-kitchen"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-deep-kitchen"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>Clean and disinfect countertops and backsplashes.</li>
+                    <li>
+                      Deep clean exterior and interior of all appliances
+                      (fridge, microwave, oven, dishwasher).
+                    </li>
+                    <li>Clean and organize cabinets and drawers.</li>
+                    <li>Clean and disinfect sink and faucet.</li>
+                    <li>Sweep, mop, and scrub the floor.</li>
+                    <li>Clean and degrease stove and range hood.</li>
+                    <li>Clean light fixtures and switches.</li>
+                    <li>Take out the trash and clean trash cans.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-deep-bathrooms">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-deep-bathrooms"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse-deep-bathrooms"
+                >
+                  Bathrooms
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse-deep-bathrooms"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-deep-bathrooms"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      Clean and disinfect toilets, sinks, and countertops.
+                    </li>
+                    <li>Scrub and disinfect showers, bathtubs, and tiles.</li>
+                    <li>Clean and polish mirrors and glass shower doors.</li>
+                    <li>Sweep, mop, and scrub the floor.</li>
+                    <li>Clean light fixtures and switches.</li>
+                    <li>Replace towels and toilet paper (if necessary).</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2
+                class="accordion-header"
+                id="panelsStayOpen-deep-common-areas"
+              >
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-deep-common-areas"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse-deep-common-areas"
+                >
+                  Common Areas
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse-deep-common-areas"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-deep-common-areas"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>Dust and clean all surfaces.</li>
+                    <li>Vacuum and mop floors.</li>
+                    <li>Clean light switches and doorknobs.</li>
+                    <li>Tidy and organize areas.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-deep-extras">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-deep-extras"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse-deep-extras"
+                >
+                  Additional Tasks
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse-deep-extras"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-deep-extras"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>Clean walls and baseboards.</li>
+                    <li>Clean air vents and grates.</li>
+                    <li>
+                      Clean and sanitize high-touch areas (door handles, light
+                      switches, etc.).
+                    </li>
+                    <li>
+                      Detailed cleaning of any additional requested areas.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="package col-md-4 flex-grow-1">
+          <h3 class="text-center">Commercial Cleaning Package</h3>
+          <div class="accordion" id="accordionCommercialCleaningPackage">
+            <div class="accordion-item">
+              <h2
+                class="accordion-header"
+                id="panelsStayOpen-commercial-living-room"
+              >
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-commercial-living-room"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse-commercial-living-room"
+                >
+                  Office Spaces
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse-commercial-living-room"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-commercial-living-room"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      Dusting and wiping down desks, chairs, and workstations.
+                    </li>
+                    <li>Vacuuming carpets and mopping hard floors.</li>
+                    <li>Emptying trash bins and replacing liners.</li>
+                    <li>Cleaning windows and glass partitions (interior).</li>
+                    <li>Dusting shelves, blinds, and other surfaces.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2
+                class="accordion-header"
+                id="panelsStayOpen-commercial-common-areas"
+              >
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-commercial-common-areas"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse-commercial-common-areas"
+                >
+                  Common Areas and Reception
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse-commercial-common-areas"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-commercial-common-areas"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      Cleaning and disinfecting reception desks and seating
+                      areas.
+                    </li>
+                    <li>Vacuuming and mopping floors.</li>
+                    <li>Dusting and cleaning surfaces.</li>
+                    <li>Emptying trash and recycling bins.</li>
+                    <li>Cleaning glass doors and windows.</li>
+                    <li>Polishing and cleaning fixtures and decor.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2
+                class="accordion-header"
+                id="panelsStayOpen-commercial-restrooms"
+              >
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-commercial-restrooms"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse-commercial-restrooms"
+                >
+                  Restrooms
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse-commercial-restrooms"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-commercial-restrooms"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      Cleaning and disinfecting toilets, sinks, and countertops.
+                    </li>
+                    <li>Sweeping and mopping floors.</li>
+                    <li>Emptying sanitary bins.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2
+                class="accordion-header"
+                id="panelsStayOpen-commercial-break-areas"
+              >
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-commercial-break-areas"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse-commercial-break-areas"
+                >
+                  Kitchen and Break Areas
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse-commercial-break-areas"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-commercial-break-areas"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>Cleaning and disinfecting countertops and tables.</li>
+                    <li>Cleaning sinks and faucets.</li>
+                    <li>
+                      Wiping down exterior surfaces of appliances (microwave,
+                      refrigerator, coffee maker).
+                    </li>
+                    <li>Sweeping and mopping floors.</li>
+                    <li>Emptying trash and recycling bins.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2
+                class="accordion-header"
+                id="panelsStayOpen-commercial-extras"
+              >
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-commercial-extras"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse-commercial-extras"
+                >
+                  Conference Rooms
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse-commercial-extras"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-commercial-extras"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>Dusting and wiping down tables and chairs.</li>
+                    <li>Vacuuming or mopping floors.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div
-        class="bg-custom col-md-4"
-        style="
-          background-image: linear-gradient(white, rgb(190, 190, 190)),
-            url(/images/house2.jpg);
-        "
+      <footer
+        class="footer-container d-flex flex-column flex-sm-row p-4 bg-dark text-white"
       >
-        <div class="navigation-slot">
-          <a name="house">Clean House</a>
-          <a href="#top">Back to top</a>
-        </div>
-        <div class="content-section">
-          <div class="xxxxxx">
-            <img class="img-fluid" src="/images/house1.jpg" alt="House" />
-          </div>
-          <div class="mt-3">
-            A clean house is a sanctuary of comfort and well-being. At Jazzy &
-            Bright, we offer personalized, cleaning services using top quality
-            products and the latest techniques. Our dedicated team ensures every
-            corner of your home sparkles, creating a welcoming atmosphere for
-            family and guests.
+        <div class="d-flex flex-column col-12 col-sm-6 mb-4 mb-sm-0">
+          <img
+            class="img-fluid mb-3 mx-auto"
+            src="/images/logo.svg"
+            alt="Jazzy & Bright Logo"
+          />
+          <div>
+            <strong>Jazzy & Bright</strong> offers top-notch residential and
+            commercial cleaning solutions tailored to meet your needs. Our
+            professional team is committed to delivering exceptional service.
           </div>
         </div>
-      </div>
-      <div
-        class="d-flex bg-custom col-md-4"
-        style="
-          background-image: linear-gradient(white, rgb(190, 190, 190)),
-            url(/images/window.jpg);
-        "
-      >
-        <div class="navigation-slot">
-          <a name="windows">Shiny Windows</a>
-          <a href="#top">Back to top</a>
-        </div>
-        <div class="content-section">
-          <div class="xxxxxx">
-            <img class="img-fluid" src="/images/window.jpg" alt="Windows" />
-          </div>
-          <div class="mt-3">
-            Cleaning windows is essential for a bright, inviting home. Enjoy
-            natural light and unobstructed views with our team window cleaning
-            services, where clarity and cleanliness meet.
+
+        <div class="col-12 col-sm-6 mb-4 mb-sm-0 d-flex justify-content-center">
+          <div class="align-self-center p-4">
+            <div class="text-center">Chateauguay, Quebec</div>
+            <div class="text-center">All rights reserved &copy; <span id="current-year"></span></div>
           </div>
         </div>
-      </div>
-      <div
-        class="d-flex bg-custom col-md-4"
-        style="
-          background-image: linear-gradient(white, rgb(190, 190, 190)),
-            url(/images/sofa1.jpg);
-        "
-      >
-        <div class="navigation-slot">
-          <a name="sofa">Deep Clean Sofa</a>
-          <a href="#top">Back to top</a>
-        </div>
-        <div class="content-section">
-          <div class="xxxxxx">
-            <img class="img-fluid" src="/images/sofa2.jpg" alt="Sofa" />
-            <img
-              class="img-fluid mt-3 extra-image"
-              src="/images/dining.jpg"
-              alt="Dining Room"
-            />
-          </div>
-          <div class="mt-3">
-            A clean sofa and dining table are the heart of a welcoming home. At
-            Jazzy & Bright, we meticulously clean and sanitize your furniture,
-            removing dirt, stains, and allergens. Trust us to keep your living
-            and dining spaces immaculate and inviting.
-          </div>
-        </div>
-      </div>
-      <div
-        class="d-flex bg-custom col-md-4"
-        style="
-          background-image: linear-gradient(white, rgb(190, 190, 190)),
-            url(/images/dusting2.jpg);
-        "
-      >
-        <div class="navigation-slot">
-          <a name="dust">Full Dusting</a>
-          <a href="#top">Back to top</a>
-        </div>
-        <div class="content-section">
-          <div class="xxxxxx">
-            <img class="img-fluid" src="/images/dusting1.jpg" alt="Dusting" />
-          </div>
-          <div class="mt-3">
-            Dusting is essential for a clean and healthy home. We provide
-            thorough dusting services to eliminate dust, allergens, and debris
-            from every surface. Our skilled team uses top-quality tools and
-            techniques to reach even the toughest spots, ensuring your
-            furniture, shelves, and decorative items are pristine. Enjoy a fresh
-            and clean home.
-          </div>
-        </div>
-      </div>
-      <div
-        class="d-flex bg-custom col-md-4"
-        style="
-          background-image: linear-gradient(white, rgb(190, 190, 190)),
-            url(/images/carpets1.jpg);
-        "
-      >
-        <div class="navigation-slot">
-          <a name="floor">Floor and Carpets</a>
-          <a href="#top">Back to top</a>
-        </div>
-        <div class="content-section">
-          <div class="xxxxxx">
-            <img class="img-fluid" src="/images/carpets2.jpg" alt="Carpets" />
-            <img class="img-fluid mt-3 extra-image" src="/images/floor.jpg" alt="Floor" />
-          </div>
-          <div class="mt-3">
-            Clean floors and carpets are the foundation of a beautiful home. We
-            offer cleaning services to remove dirt, stains, and allergens,
-            restoring the original luster and freshness of your surfaces.
-          </div>
-        </div>
-      </div>
-      <div
-        class="d-flex bg-custom col-md-4"
-        style="
-          background-image: linear-gradient(white, rgb(190, 190, 190)),
-            url(/images/bathroom1.jpg);
-        "
-      >
-        <div class="navigation-slot">
-          <a name="kitchens">Kitchens and Bathrooms</a>
-          <a href="#top">Back to top</a>
-        </div>
-        <div class="content-section">
-          <div class="xxxxxx">
-            <img class="img-fluid" src="/images/kitchen1.jpg" alt="Kitchen" />
-            <img
-              class="img-fluid mt-3 extra-image"
-              src="/images/bathroom2.jpg"
-              alt="Bathroom"
-            />
-          </div>
-          <div class="mt-3">
-            Kitchens and bathrooms require meticulous cleaning services for
-            these crucial areas. Our team uses products to sanitize countertops,
-            appliances, sinks, showers, and toilets, ensuring every surface is
-            spotless and germ-free. From scrubbing tiles and grout to polishing
-            fixtures, we leave your kitchens and bathrooms sparkling clean.
-          </div>
-        </div>
-      </div>
+      </footer>
     </div>
-</div>
 
+    <script>
+      // Obtiene el año actual
+      var currentYear = new Date().getFullYear();
+
+      // Inserta el año actual en el elemento con id 'current-year'
+      document.getElementById("current-year").textContent = currentYear;
+    </script>
 
     <!-- Bootstrap Bundle with Popper -->
     <script
@@ -258,5 +814,21 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "150px";
+        document.getElementById("main").style.marginLeft = "150px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
   </body>
 </html>
