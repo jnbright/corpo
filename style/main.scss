@@ -123,31 +123,7 @@ body {
     padding: 1rem 0;
   }
 }
-@include media-breakpoint-up(sm) { 
-  .packages {
-    padding: 2rem;
-    .package {
-      padding: 2rem;
-    }
-  }
-  .logo-wrapper {
-    display: none;
-  }
-  .image-container {
-    .logo-wrapper {
-      display: unset;
-    }
-  }
-  .tiles{
-    width: 70%;
-    display: flex;
-    margin: 0 auto;
-    flex-wrap: wrap;
-  }
-  .extra-image {
-    display: none;
-  }
-}
+
 
 
 .sidenav {
@@ -209,6 +185,7 @@ body {
   -o-border-radius: 0 0 0.5rem 0.5rem;
   -webkit-box-shadow: 1px 1px 4px 3px #236C96;
   box-shadow: 1px 1px 4px 3px #236C96;
+  cursor: pointer;
 }
 
 footer {
@@ -216,4 +193,94 @@ footer {
     max-width: 300px !important;
     margin: 0 auto;
   }
+}
+
+
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(85,191,241,0.9);
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 102;
+  color:white;
+  p {
+  margin: 0;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700;
+  }
+  button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    background-color: $primary;
+    color: white;
+    border-radius: 0.5rem ;
+    -webkit-border-radius: 0.5rem ;
+    -moz-border-radius: 0.5rem ;
+    -ms-border-radius: 0.5rem ;
+    -o-border-radius: 0.5rem ;
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+  #rejectAll {
+    background-color: $danger;
+    &:hover {
+      background-color: #c82333;
+    }
+  }
+  .cookie-options {
+    text-align: left;
+    margin-bottom: 10px;
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input {
+      margin-right: 10px;
+    }
+  }
+}
+
+
+@include media-breakpoint-up(sm) { 
+  .packages {
+    padding: 2rem;
+    .package {
+      padding: 2rem;
+    }
+  }
+  .logo-wrapper {
+    display: none;
+  }
+  .image-container {
+    .logo-wrapper {
+      display: unset;
+    }
+  }
+  .tiles{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .extra-image {
+    display: none;
+  }
+  .cookie-consent {
+    left:69%;
+    bottom: 2%;
+    width: 30%;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+}
 }
